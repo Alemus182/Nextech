@@ -1,10 +1,10 @@
-import { InspiniaPage } from './app.po';
+import { NextTechPage } from './app.po';
 
-describe('inspinia App', () => {
-  let page: InspiniaPage;
+describe('NextTech App', () => {
+  let page: NextTechPage;
 
   beforeEach(() => {
-    page = new InspiniaPage();
+    page = new NextTechPage();
   });
 
   it('should display message saying app works', () => {

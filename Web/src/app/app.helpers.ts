@@ -1,5 +1,5 @@
 /*
- * Inspinia js helpers:
+ * NextTech js helpers:
  *
  * detectBody() - detect windows size
  * smoothlyMenu() - add smooth fade in/out on navigation show/ide
