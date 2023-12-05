@@ -21,6 +21,7 @@ As well as a single page application base in angular like a front end.
 - Authentication is based on username and password and it generates a JWT.
   The only validation that is carried out is that it is a valid email and
   that the password has more than 8 characters.
+- The proposal is a basic query, so we can only filter by id and category. For more advanced searches, data consolidation work is required.
 # Execution
 ## Backend
    - Install and open Visual Studio Code or Visual Studio
@@ -36,7 +37,7 @@ dotnet test
 ``` 
  ## Frontend
  -   Install Visual Studio Code
- -   The current Application is in Angular 10, if you have a higher versión of node.js  12.11.1, Do you need to use NVM (Node Version Manager). For Windows You can download it at: [Website](https://github.com/coreybutler/nvm-windows#installation--upgrades) or download it through a package manager like chocolatey, for Windows or Homebrew for mac.
+ -   The Application is built in Angular 10, if you have a newer version installed of node.js 12.11.1, you need to use NVM (Node Version Manager). for Windows, you can download it in: [Website](https://github.com/coreybutler/nvm-windows#installation--upgrades) or download it through a package manager like chocolatey for Windows or Homebrew for mac.
  - After installation of NVM, open the terminal and install the corresponding node version
       ```properties
        nvm install 12.11.1
