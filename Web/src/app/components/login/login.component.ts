@@ -35,8 +35,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     private store: Store<IAppState>,
   ) {
     this.loginForm = this.fb.group({
-      username: [null, Validators.compose([Validators.required])],
-      pswd: [null, Validators.compose([Validators.required])],
+      username: [null, Validators.compose([Validators.required, Validators.email])],
+      pswd: [null, Validators.compose([Validators.required, Validators.minLength(8)])],
     });
   }
 
