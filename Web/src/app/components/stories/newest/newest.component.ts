@@ -18,10 +18,11 @@ export class NewestComponent implements OnInit {
     /* Table Settings */
     dataSource = new MatTableDataSource<Story>();
     @ViewChild('paginator') paginator: MatPaginator;
-    pageSizes = [200];
+    pageSizes = [20];
     displayedColumns: string[] = [
+      'id',
       'title',
-      'url'
+      'url',
     ];
 
     totalData: number;

@@ -19,7 +19,7 @@ namespace Application.Services.Stories.Querys
 
             private readonly IMemoryCache _memoryCache;
 
-            private const int PageSize = 200;
+            private const int PageSize = 20;
 
             public FindStoriesByFilterHandler(IHackerNewsService HackerNewsService, IMemoryCache memoryCache)
             {

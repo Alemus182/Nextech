@@ -15,15 +15,16 @@ export class FindByFilterComponent implements OnInit {
 
       /* Table Settings */
       public array: Story[];
-      public pageSize = 200;
+      public pageSize = 20;
       public currentPage = 0;
       public totalSize = 0; 
 
       dataSource = new MatTableDataSource<Story>();
       @ViewChild('paginator') paginator: MatPaginator;
       displayedColumns: string[] = [
+        'id',
         'title',
-        'url'
+        'url',
       ];
 
       isLoadingResults = false;
