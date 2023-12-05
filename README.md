@@ -1,4 +1,4 @@
-# Prototype-v1
+# NextTech Demo v 1.0
 
 Baseline for construction of an API based on .net 7, under the proposed clean architecture approaches and the use of SOLID development principles.
 As well as a single page application base in angular like a front end.
