@@ -26,14 +26,14 @@ As well as a single page application base in angular like a front end.
    - Do you need Visual Studio Code or Visual Studio
    - Download the .net 7 SDK available in [Web Site](https://dotnet.microsoft.com/es-es/download/dotnet/7.0)
    - Navigate to the folder "Api" and run:
-       ```properties
-       dotnet run
-       ```
+```properties
+dotnet run
+```
    - It Will be open in: https://localhost:7245
    - For execute the test suite, go to  the folder "Test" and run:
-       ```properties
-       	dotnet run
-       ``` 
+```properties
+dotnet test
+``` 
  ## Frontend
  -   Do you need Visual Studio Code
  -   The current Application is in Angular 10, if you have a higher versión of node.js   12.11.1, Do you need to use NVM (Node Version Manager) for Windows? You can download it at: [Website](https://github.com/coreybutler/nvm-windows#installation--upgrades) or download it through a 
