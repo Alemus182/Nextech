@@ -5,7 +5,7 @@
   <div class="col-lg-5 col-sm-7">
     <div class="middle-box text-center animated fadeInDown">
       <div>
-        <h3>Bienvenido</h3>
+        <h3>Welcome</h3>
       </div>
       
       <form [formGroup]="loginForm" class="m-t" role="form" (ngSubmit)="onSubmit(loginForm)">
@@ -29,7 +29,7 @@
           </app-field-error-display>
         </div>
         <br>
-        <button type="submit" class="btn btn-primary block full-width m-b">Iniciar sesión</button>
+        <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
         <p *ngIf="showConfirm" class="label" [ngClass]="{'label-info': confirmStatus, 'label-warning': !confirmStatus}">{{msg}}</p>
       </form>
 
