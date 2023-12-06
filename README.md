@@ -22,6 +22,7 @@ As well as a single page application base in angular like a front end.
   The only validation that is carried out is that it is a valid email and
   that the password has more than 8 characters.
 - The proposal is a basic query, so we can only filter by id and category. For more advanced searches, data consolidation work is required.
+- The swagger UI in the api is open for testing propouses.
 # Execution
 ## Backend
    - Install and open Visual Studio Code or Visual Studio
