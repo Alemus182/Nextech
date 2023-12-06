@@ -1,5 +1,6 @@
 ﻿using Api.Components;
 using Application.Services.Stories.Querys;
+using Application.Services.Stories.Responses;
 using MediatR;
 
 namespace Api.Routes
@@ -19,8 +20,18 @@ namespace Api.Routes
         public override void AddRoutes(WebApplication app)
         {
             var group = app.MapGroup(ApiRoutes.StoriesRoutes.Group).WithOpenApi().RequireAuthorization();
-            group.MapGet(ApiRoutes.StoriesRoutes.GetNewestStories, (int page) => GetNewestStories(page));
-            group.MapPost(ApiRoutes.StoriesRoutes.FindStoriesByFilters, (FindStoriesByFilterRequest req) => FindStoriesByFilters(req));
+            
+            group.MapGet(ApiRoutes.StoriesRoutes.GetNewestStories, (int page) => GetNewestStories(page))
+                .Produces<StoriesResponse>()
+                .Produces(400)
+                .Produces(401)
+                .Produces(500)
+                ;
+            group.MapPost(ApiRoutes.StoriesRoutes.FindStoriesByFilters, (FindStoriesByFilterRequest req) => FindStoriesByFilters(req))
+                .Produces<StoriesResponse>()
+                .Produces(400)
+                .Produces(401)
+                .Produces(500);
         }
 
         /// <summary>
