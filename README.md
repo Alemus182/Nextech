@@ -51,4 +51,4 @@ dotnet test
 # Demo
 An implementation was carried out which is available at:
 - [Web Site](https://wonderful-wave-0f1681e1e.4.azurestaticapps.net/)
-- [Web Api](https://nextech-demo-api.azurewebsites.net/)
+- [Web Api](https://nextech-demo-api.azurewebsites.net/swagger)
